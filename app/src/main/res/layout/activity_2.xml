@@ -36,6 +36,7 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
 
+        app:layout_constraintStart_toStartOf="@+id/EmailEt"
         app:layout_constraintTop_toBottomOf="@+id/EmailEt" />
 
     <Button

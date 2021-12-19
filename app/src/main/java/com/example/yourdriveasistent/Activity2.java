@@ -43,8 +43,8 @@ public class Activity2 extends AppCompatActivity {
     public void Login(View view) {
         EditText EmailEt =findViewById(R.id.EmailEt);
         EditText PassEt =findViewById(R.id.PassEt);
-        mAuth.createUserWithEmailAndPassword(EmailEt.getText().toString(), PassEt.getText().toString())
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        mAuth.signInWithEmailAndPassword(EmailEt.getText().toString(), PassEt.getText().toString())
+                .addOnCompleteListener(Activity2.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
