@@ -10,10 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YourDriveAsistent">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeAc"
             android:exported="false"
-            android:label="@string/title_activity_welcome"
-            android:theme="@style/Theme.YourDriveAsistent.NoActionBar" />
+            android:label="@string/title_activity_welcome" />
         <activity
             android:name=".Activity2"
             android:exported="false" />

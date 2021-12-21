@@ -51,13 +51,15 @@ public class Activity2 extends AppCompatActivity {
                             startActivity(new Intent(Activity2.this ,WelcomeAc.class));
 
                         } else {
-                            Toast.makeText(Activity2.this,"login failed failed please try again",Toast.LENGTH_LONG);
+                            Toast.makeText(Activity2.this,"login failed failed please try again",Toast.LENGTH_LONG).show();
                         }
                     }
                 });
 
 
     }
+
+
 
     public void Register(View view) {
         EditText EmailEt =findViewById(R.id.EmailEt);
@@ -69,7 +71,7 @@ public class Activity2 extends AppCompatActivity {
                         if (task.isSuccessful()) {
 startActivity(new Intent(Activity2.this ,WelcomeAc.class));
                         } else {
-Toast.makeText(Activity2.this,"register failed please try again",Toast.LENGTH_LONG);
+Toast.makeText(Activity2.this,"register failed please try again",Toast.LENGTH_LONG).show();
                         }
                     }
                 });
